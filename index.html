@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament-Survey-Form</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <h1 id="title">TOURNAMENT SURVEY FORM</h1>
+      <p id="description">Please fill out this form with the required information</p>
+      <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+      <fieldset> 
+        <label id="name-label">Name <input placeholder="Enter your name" id="name" name="name" type="text" required/>
+        </label>
+        <label id="email-label">Email <input placeholder="Enter you Email" value="email" id="email" name="email" type="email" required/>
+        </label>
+        <label id="number-label">Age (optional) <input placeholder="Age" id="number" name="age" type="number" min="10" max="25"/>
+        </label>
+        <label for="dropdown">Which position describes your best role? 
+          <select id="dropdown"> 
+            <option disabled value="1">Select best role</option>
+             <option value="GK">Goalkeeper</option>
+              <option value="Def">Defender</option>
+               <option value="Mid">Mid-Fielder</option>
+                <option value="St">Striker</option>
+                 <option value="O">Other</option>
+            </select>
+        </label>
+      </fieldset>
+      <fieldset> 
+        <legend>Would you refer this tournament to your friend?</legend>
+<label id="refer"><input checked id="refer" value="1" name="option" type="radio" class="inline"/> Definitely
+          </label>
+          <label id="refer"> <input id="refer" name="option" type="radio" class="inline" value="2"/>Maybe
+            </label>
+            <label id="refer"> <input type="radio" id="refer" class="inline" name="option" value="3"/>
+              Not Sure</label>
+      </fieldset>
+      <fieldset> 
+</label>
+        <label for="dropdown">What is your favourite feature of this tournament? 
+          <select id="dropdown" >
+            <option DISABLED value="1">Select an option</option>
+             <option value="2">Prizes</option>
+              <option value="3">Time-Management</option>
+               <option value="4">Organized</option>
+                <option value="5">Budget-Friendly</option>
+                 <option value="6">Other</option>
+            </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="improve">What would you like to see improved? (Check all that apply) <input id="improve" name="option" type="checkbox" class="inline" value="1"/> 
+          Prizes          </label>
+          <input id="improve" name="option" type="checkbox" class="inline" value="2"/> Waiting room
+            </label>
+            </label>
+          <input id="improve" name="option" value="3"type="checkbox" class="inline"/> Drinks
+            </label>
+            </label>
+          <input id="improve" name="option" value="4" type="checkbox" class="inline"/> Forums
+                      </label>
+                      </label>
+          <input id="improve" name="option" value="5"type="checkbox" class="inline"/> Gallery
+            </label>
+            </label>
+          <input id="improve" name="option" type="checkbox" value="6" class="inline"/> Additional Prizes
+            </label>
+            </fieldset>
+            <fieldset>
+            <label for="comments"> Any comments or suggestions?
+              <textarea id="comments" name="comments" rows="5" cols="60" placeholder="Enter your comments here..."> </textarea>
+              </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+        </form>
+      </body>
+  </html>
